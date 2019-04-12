@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const token = process.env.DISCORD_BOT_SECRET;
 const keep_alive = require('./keep_alive.js');
-//edit suf to change the suffix for commands
 const suf = "oval";
 const sufC = "Oval";
 const how = getRndInteger(1,10)
 var rndcnt = 0
+//Page Counter to prevent auto page turning from going too far
 var pagecnt = 1
 
 const gameStatus = "Type '" + suf + "' for help.";
